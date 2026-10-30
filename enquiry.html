@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry - Si Gone Cafe</title>
+    <link rel="stylesheet" type="text/css" href="CSS/STYLE_1.css">
+
+
+<meta name="description" content="Si Gone Cafe - Coffee, bakery, and event catering in Braamfontein, Johannesburg.">
+<meta name="keywords" content="Si Gone Cafe, Braamfontein coffee, catering, Johannesburg cafe">
+
+
+
+</head>
+<body>
+<body>
+  
+  <header>
+<nav>
+      <ul>
+     <li><a href="home.html">Home</a></li>
+     <li><a href="Sevices.html">Services</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>    
+
+  <main>
+<h2>Make an Enquiry</h2>
+      <form id="enquiryForm" action="#" method="POST">
+    <label for="enquiryName">Full Name:</label>
+  <input type="text" id="enquiryName" required>
+      <label for="enquiryEmail">Email Address:</label>
+      <input type="email" id="enquiryEmail" required>
+
+   <label for="enquiryService">Select Item / Service:</label>
+  <select id="enquiryService">
+ <option value="Coffee Catering">Coffee Catering (R50 per person)</option>
+ <option value="Pastry Platter">Pastry Platter (R250 per platter)</option>
+        <option value="Venue Booking">Private Venue Booking (R1500 flat fee)</option>
+      </select><label for="enquiryQuantity">Quantity / Guests:</label>
+      <input type="number" id="enquiryQuantity" min="1" value="1" required>
+
+      <button type="submit">Calculate & Submit Enquiry</button>
+      <div id="enquiryFeedback" style="margin-top: 10px; font-weight: bold;"></div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Si Gone Cafe. All rights reserved.</p>
+  </footer>
+
+  <script src="Java Script/scipt.js" defer></script>
+</body>
+</html>

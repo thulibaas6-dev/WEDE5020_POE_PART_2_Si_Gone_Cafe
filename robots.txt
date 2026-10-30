@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thulibaas6-dev.github.io/WEDE5020_POE_PART_3_Si_Gone_Cafe/sitemap.xml

@@ -3,6 +3,13 @@
 <head>
     <title>Contact us - Si Gone Cafe</title>
     <link rel="stylesheet" type="text/css" href="CSS/STYLE_1.css">
+    <link rel ="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+
+<meta name="description" content="Si Gone Cafe - Coffee, bakery, and event catering in Braamfontein, Johannesburg.">
+<meta name="keywords" content="Si Gone Cafe, Braamfontein coffee, catering, Johannesburg cafe">
+
+
 </head>
 <body >
   <header>
@@ -11,6 +18,7 @@
        <img src="Images/logi.jpg" alt="Si Gone Cafe Logo">
     <p><strong>Si Gone Cafe</strong></p>
     <nav>
+        <a href="enquiry.html">Enquiry|</a>
  <a href="home.html">Home|</a>
 <a href="about.html">About Us|</a>
 <a href="sevices.html">Sevices|</a>
@@ -26,25 +34,45 @@
     <p><strong>Phone:</strong> +27 11 573 8329</p>
     <p><strong>Email:</strong> info@sigonecafe.co.za</p>
 
+    <h3>Find Us</h3>
+<div id="map" style="height: 300px; width: 100%; border-radius:8px; margin: 15px 0;"></div>
+
     <h3>Opening Hours</h3>
     <p><strong>Monday - Friday:</strong> 07:00 AM - 18:00 PM</p>
 <p><strong>Saturday - Sunjday:</strong> 08:00 AM - 16:00 PM</p>
 
 <h4>Send Us a Message</h4>
-<form>
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+<form id="contactForm" action="#" method="POST">
+  <label for="contactName">Name:</label><br>
+  <input type="text" id="contactName" name="name" required><br><br>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+  <label for="contactEmail">Email:</label><br>
+  <input type="email" id="contactEmail" name="email" required><br><br>
 
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="35" required></textarea><br><br>
+  <label for="contactMessage">Message:</label><br>
+  <textarea id="contactMessage" name="message" rows="4" cols="35" required></textarea><br><br>
 
-    <input type="submit" value="Submit">
+  <input type="submit" value="Submit">
+  <div id="contactFeedback" style="margin-top: 10px; font-weight: bold;"></div>
 </form>
-
 </main>
-<footer>&copy;st10522425</footer>
+
+<footer>
+  <p>&copy; 2026 Si Gone Cafe. All rights reserved.</p>
+</footer>
+
+
+
+
+
+ <script src="Java Script/scipt.js" defer></script>
+
+ 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  
+  <script src="Java Script/scipt.js" defer></script>
+
+
 </body>
 </html>
