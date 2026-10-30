@@ -187,3 +187,30 @@ opacity: 0.15;
 }
 
 
+/* These are the visible Animations and Transitions */
+@keyframes pageSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+opacity: 1;
+transform: translateY(0);
+  }
+}main {
+  animation: pageSlideUp 0.6s ease-out;
+}
+
+button, input[type="submit"] {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+                  button:hover, input[type="submit"]:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}.grid-item, .service-card, .gallery-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}.grid-item:hover, .service-card:hover,.gallery-img:hover {
+  transform: translateY(-8px);
+       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
